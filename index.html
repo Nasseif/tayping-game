@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Typing Speed Test Game by HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="message">
+        You Are Playing On
+        <span class="lvl"></span> Level & You have <span class="seconds"></span> Seconds To Type The Word
+    </div>
+    <!-- Start Game -->
+    <div class="game">
+        
+        <div class="container">
+           
+            <div class="the-word"></div>
+            <input type="text" class="input" />
+            <div class="control">
+                <div class="time"> Time Left: <span></span> Seconds</div>
+                <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+            </div>
+            <div class="finish">
+                <div class="congratz">
+                    <span class="good">Congratz </span>
+                    <a href="#" class="start btn-again">Start Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Game Popup -->
+    <div class="main-popup">
+        <div class="popup">
+            <div class="img">
+                <img src="https://www.pngmart.com/files/5/Games-PNG-File.png" alt="rocket">
+            </div>
+            <div class="name popup-name">Typing Speed Test Game</div>
+            <div class="select_box">
+                <p class="selected"><span>Select Level</span> <i class="fa-solid fa-circle-chevron-down"></i></p>
+                <ul id="box">
+                    <li>Easy</li>
+                    <li>Normal</li>
+                    <li>Hard</li>
+                </ul>
+            </div>
+            <span class="validation"></span>
+            
+            <a href="#" class="popup-button"> <span>Start Game</span> <div class="liquid"></div> </a>
+        </div>
+    </div>
+    <!-- Congratz Animation  -->
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
